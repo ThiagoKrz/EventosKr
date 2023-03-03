@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6XDsmv0fYYDf7Nu8+WGouRwscU1fbONeGS7j57YoPCCoZZDjetobdWQJ7K9Rp1O5ACpI+2BGrsUZfpjF4PE+A==",
+  "dgSpecHash": "GMnI03q6nQW3KuUOwE8Kkx7nb+xINIXqN2gPtltYHhKiNAbPLne/GWLPVy0TRNGsu2LVo2KOTzDKuPADn0c2eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
+  "projectFilePath": "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thisi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\thisi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

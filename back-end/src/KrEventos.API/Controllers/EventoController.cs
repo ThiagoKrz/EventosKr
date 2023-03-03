@@ -10,17 +10,14 @@ public class EventoController : ControllerBase
 {
     private readonly DataContext _context;
 
-    public EventoController(DataContext context)
-    {
+    public EventoController(DataContext context) {
         _context = context;
     }
-
     [HttpGet]
     public IEnumerable<Evento> Get()
     {
         return _context.Eventos;
     }
-
     [HttpGet("{id}")]
     public Evento GetById(int id)
     {
