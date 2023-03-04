@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj": {}
+    "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj": {
+    "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
+        "projectUniqueName": "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
         "projectName": "KrEventos.API",
-        "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
+        "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
         "packagesPath": "C:\\Users\\thisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\obj\\",
+        "outputPath": "C:\\Users\\thisi\\Documents\\Repositorios\\EventosKr\\back-end\\src\\KrEventos.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thisi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,14 +40,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNet.Cors": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
-            "Microsoft.AspNet.WebApi.Cors": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"

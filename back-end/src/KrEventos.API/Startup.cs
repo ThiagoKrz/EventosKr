@@ -32,7 +32,6 @@ namespace KrEventos.API
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
             services.AddControllers();
-            services.AddCors(c => {c.AddPolicy("AllowAccess_To_API", options => options.WithOrigins("*"));});
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "KrEventos.API", Version = "v1" });
@@ -50,12 +49,12 @@ namespace KrEventos.API
                     c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KrEventos.API v1")
                 );
             }
-            app.UseRouting();
-            app.UseCors("AllowAccess_To_API");
-            app.UseAuthorization();
 
-            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
