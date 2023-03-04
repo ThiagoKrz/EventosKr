@@ -1,23 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
 using KrEventos.API.Models;
 using KrEventos.API.Data;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 
 namespace KrEventos.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class EventoController : ControllerBase
+[EnableCors("AllowAccess_To_API")]
+public class EventosController : ControllerBase
 {
     private readonly DataContext _context;
 
-    public EventoController(DataContext context) {
+    public EventosController(DataContext context)
+    {
         _context = context;
     }
+
     [HttpGet]
     public IEnumerable<Evento> Get()
     {
         return _context.Eventos;
     }
+
     [HttpGet("{id}")]
     public Evento GetById(int id)
     {
