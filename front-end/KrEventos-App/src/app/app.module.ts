@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     BrowserAnimationsModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    AccordionModule.forRoot()],
+    AccordionModule.forRoot(),
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 
