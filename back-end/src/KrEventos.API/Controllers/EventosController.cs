@@ -3,6 +3,7 @@ using KrEventos.Domain;
 using KrEventos.Persistence;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using KrEventos.Persistence.Contextos;
 
 namespace KrEventos.API.Controllers;
 
