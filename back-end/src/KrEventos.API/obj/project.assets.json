@@ -49,7 +49,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
         },
@@ -731,7 +731,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -955,7 +955,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
@@ -1431,6 +1431,45 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "KrEventos.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "KrEventos.Domain": "1.0.0",
+          "KrEventos.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KrEventos.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KrEventos.Application.dll": {}
+        }
+      },
+      "KrEventos.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/KrEventos.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KrEventos.Domain.dll": {}
+        }
+      },
+      "KrEventos.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "KrEventos.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.3"
+        },
+        "compile": {
+          "bin/placeholder/KrEventos.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KrEventos.Persistence.dll": {}
         }
       }
     }
@@ -4035,10 +4074,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "KrEventos.Application/1.0.0": {
+      "type": "project",
+      "path": "../KrEventos.Application/KrEventos.Application.csproj",
+      "msbuildProject": "../KrEventos.Application/KrEventos.Application.csproj"
+    },
+    "KrEventos.Domain/1.0.0": {
+      "type": "project",
+      "path": "../KrEventos.Domain/KrEventos.Domain.csproj",
+      "msbuildProject": "../KrEventos.Domain/KrEventos.Domain.csproj"
+    },
+    "KrEventos.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../KrEventos.Persistence/KrEventos.Persistence.csproj",
+      "msbuildProject": "../KrEventos.Persistence/KrEventos.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "KrEventos.Application >= 1.0.0",
+      "KrEventos.Domain >= 1.0.0",
+      "KrEventos.Persistence >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
@@ -4073,7 +4130,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Application\\KrEventos.Application.csproj": {
+              "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Application\\KrEventos.Application.csproj"
+            },
+            "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj": {
+              "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj"
+            },
+            "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
+              "projectPath": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

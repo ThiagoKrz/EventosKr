@@ -21,4 +21,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KrEventos.Application\KrEventos.Application.csproj" />
+    <ProjectReference Include="..\KrEventos.Domain\KrEventos.Domain.csproj" />
+    <ProjectReference Include="..\KrEventos.Persistence\KrEventos.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

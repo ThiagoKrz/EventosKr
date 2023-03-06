@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using KrEventos.API.Models;
-using KrEventos.API.Data;
+using KrEventos.Domain;
+using KrEventos.Persistence;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 
@@ -11,9 +11,9 @@ namespace KrEventos.API.Controllers;
 [EnableCors("AllowAccess_To_API")]
 public class EventosController : ControllerBase
 {
-    private readonly DataContext _context;
+    private readonly KrEventosContext _context;
 
-    public EventosController(DataContext context)
+    public EventosController(KrEventosContext context)
     {
         _context = context;
     }
@@ -27,7 +27,7 @@ public class EventosController : ControllerBase
     [HttpGet("{id}")]
     public Evento GetById(int id)
     {
-        return _context.Eventos.FirstOrDefault(evento => evento.EventoId == id);
+        return _context.Eventos.FirstOrDefault(evento => evento.Id == id);
     }
 
     [HttpPost]

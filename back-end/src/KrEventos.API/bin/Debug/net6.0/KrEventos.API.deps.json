@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "KrEventos.API/1.0.0": {
         "dependencies": {
+          "KrEventos.Application": "1.0.0",
+          "KrEventos.Domain": "1.0.0",
+          "KrEventos.Persistence": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.EntityFrameworkCore.Design": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
@@ -931,6 +934,30 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "KrEventos.Application/1.0.0": {
+        "dependencies": {
+          "KrEventos.Domain": "1.0.0",
+          "KrEventos.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "KrEventos.Application.dll": {}
+        }
+      },
+      "KrEventos.Domain/1.0.0": {
+        "runtime": {
+          "KrEventos.Domain.dll": {}
+        }
+      },
+      "KrEventos.Persistence/1.0.0": {
+        "dependencies": {
+          "KrEventos.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.3"
+        },
+        "runtime": {
+          "KrEventos.Persistence.dll": {}
+        }
       }
     }
   },
@@ -1506,6 +1533,21 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "KrEventos.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KrEventos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KrEventos.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
