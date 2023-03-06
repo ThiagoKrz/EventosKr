@@ -245,9 +245,3 @@ C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\obj\D
 C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\obj\Debug\net6.0\KrEventos.API.pdb
 C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\obj\Debug\net6.0\KrEventos.API.genruntimeconfig.cache
 C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\obj\Debug\net6.0\ref\KrEventos.API.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\System.Web.Cors.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\System.Net.Http.Formatting.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\System.Web.Http.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\System.Web.Http.Cors.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\thisi\Documents\Repositorios\KrEventos\back-end\src\KrEventos.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

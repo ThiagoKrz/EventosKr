@@ -7,10 +7,25 @@ import { AppComponent } from './app.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 
 @NgModule({
-  declarations: [AppComponent, EventosComponent, PalestrantesComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, BrowserAnimationsModule], //Módulo de referência HTTP adicionado
+  declarations: [
+    AppComponent,
+    EventosComponent,
+    PalestrantesComponent,
+    NavComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule, //Módulo de referência HTTP adicionado
+    BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot(),
+    AccordionModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 

@@ -32,7 +32,10 @@ namespace KrEventos.API
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
             services.AddControllers();
-            services.AddCors(c => {c.AddPolicy("AllowAccess_To_API", options => options.WithOrigins("*"));});
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowAccess_To_API", options => options.WithOrigins("*"));
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "KrEventos.API", Version = "v1" });
