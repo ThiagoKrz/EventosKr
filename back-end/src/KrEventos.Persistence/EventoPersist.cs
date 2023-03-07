@@ -15,6 +15,7 @@ namespace KrEventos.Persistence.bin
         public EventoPersist(KrEventosContext context)
         {
             _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         
@@ -26,7 +27,7 @@ namespace KrEventos.Persistence.bin
             {
                 query = query.Include(e => e.PalestrantesEventos).ThenInclude(pe => pe.Palestrante);
             }
-            query = query.OrderBy(e => e.Id);
+            query = query.AsNoTracking().OrderBy(e => e.Id);
             return await query.ToArrayAsync();
         }
 
@@ -37,7 +38,7 @@ namespace KrEventos.Persistence.bin
             {
                 query = query.Include(e => e.PalestrantesEventos).ThenInclude(pe => pe.Palestrante);
             }
-            query = query.OrderBy(e => e.Id)
+            query = query.AsNoTracking().OrderBy(e => e.Id)
                             .Where(e => e.Tema.ToLower().Contains(tema.ToLower()));
 
             return await query.ToArrayAsync();
@@ -56,7 +57,7 @@ namespace KrEventos.Persistence.bin
                 .ThenInclude(pe => pe.Palestrante);
             }
 
-            query = query.OrderBy(e => e.Id)
+            query = query.AsNoTracking().OrderBy(e => e.Id)
                 .Where(e => e.Id == eventoId);
 
             return await query.FirstOrDefaultAsync();

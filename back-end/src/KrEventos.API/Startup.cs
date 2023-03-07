@@ -1,18 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using KrEventos.Persistence;
+using KrEventos.Application;
+using KrEventos.Application.Contratos;
+using KrEventos.Persistence.bin;
 using KrEventos.Persistence.Contextos;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using KrEventos.Persistence.Contratos;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace KrEventos.API
@@ -32,7 +23,15 @@ namespace KrEventos.API
             services.AddDbContext<KrEventosContext>(
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson( x => x.SerializerSettings.ReferenceLoopHandling =
+                Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );
+
+            services.AddScoped<IEventoService, EventoService>();
+            services.AddScoped<IGeralPersist, GeralPersist>();
+            services.AddScoped<IEventoPersist, EventoPersist>();
+
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowAccess_To_API", options => options.WithOrigins("*"));

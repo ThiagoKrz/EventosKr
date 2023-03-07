@@ -34,8 +34,8 @@
               "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj": {
                 "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj"
               },
-              "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
-                "projectPath": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj"
+              "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
+                "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj"
               }
             }
           }
@@ -50,6 +50,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -129,8 +133,8 @@
               "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj": {
                 "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Domain\\KrEventos.Domain.csproj"
               },
-              "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
-                "projectPath": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj"
+              "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
+                "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj"
               }
             }
           }
@@ -219,14 +223,14 @@
         }
       }
     },
-    "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
+    "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj",
         "projectName": "KrEventos.Persistence",
-        "projectPath": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj",
+        "projectPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\KrEventos.Persistence.csproj",
         "packagesPath": "C:\\Users\\thisi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thisi\\AppData\\Roaming\\NuGet\\NuGet.Config",
