@@ -102,7 +102,7 @@ namespace KrEventos.Persistence.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Nome = table.Column<string>(type: "TEXT", nullable: true),
-                    Url = table.Column<string>(type: "TEXT", nullable: true),
+                    URL = table.Column<string>(type: "TEXT", nullable: true),
                     EventoId = table.Column<int>(type: "INTEGER", nullable: true),
                     PalestranteId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
