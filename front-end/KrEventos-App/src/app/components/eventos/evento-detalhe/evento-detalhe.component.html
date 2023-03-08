@@ -39,7 +39,7 @@
       </div>
       <div class="form-row">
         <div class="form-group col-md-2">
-          <label>Qtd Pessoas</label>
+          <label>Quantidade de Pessoas</label>
           <input type="number" class="form-control" [ngClass]="{'is-invalid': f.qtdPessoas.errors && f.qtdPessoas.touched}"
             formControlName="qtdPessoas" placeholder="">
           <div *ngIf="f.qtdPessoas.errors?.required && f.qtdPessoas.touched" class="invalid-feedback">
@@ -58,20 +58,20 @@
             </div>
           </div>
           <div class="form-group col-md-4">
-            <label>e-mail</label>
+            <label>E-mail</label>
             <input type="text" class="form-control" [ngClass]="{'is-invalid': f.email.errors && f.email.touched}"
-              formControlName="email" placeholder="e-mail">
+              formControlName="email" placeholder="E-mail">
             <div *ngIf="f.email.errors?.required && f.email.touched" class="invalid-feedback">
-              e-mail é obrigatório.
+              E-mail é obrigatório.
             </div>
             <div *ngIf="f.email.errors?.email && f.email.touched" class="invalid-feedback">
-              Deve ser um endereço de e-mail válido
+              Deve ser um endereço de E-mail válido
             </div>
         </div>
         <div class="form-group col-md-4">
           <label>Imagem</label>
           <input type="text" class="form-control" [ngClass]="{'is-invalid': f.imagemURL.errors && f.imagemURL.touched}"
-            formControlName="imagemURL" placeholder="imagem">
+            formControlName="imagemURL" placeholder="Imagem">
           <div *ngIf="f.imagemURL.errors?.required && f.imagemURL.touched" class="invalid-feedback">
             Imagem é obrigatório.
           </div>
