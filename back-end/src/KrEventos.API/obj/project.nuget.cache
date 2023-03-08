@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "D8EkyqLgb5GwHlB/wxm8a3QThSSOyxgnPql2PnEUH5ZEp1p5RgQWSv4ode14O1cHWIRYI1P9dAjkTHVsrht0YQ==",
+  "dgSpecHash": "9YGhCYIjjchiwi/O1kg8WEn33zLeiWTTo1wljW4J9bmu/tZADVDhQ8wO+BI1eoxa6fY7UkYq6+fWhmvIPEq8qQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\thisi\\Documents\\Repositorios\\KrEventos\\back-end\\src\\KrEventos.API\\KrEventos.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\thisi\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\thisi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\thisi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\thisi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\thisi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
